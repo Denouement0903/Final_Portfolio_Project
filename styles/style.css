@@ -1,0 +1,28 @@
+:root {
+    --primaryColor: #0E131F;
+    --secondaryColor: #38405F;
+    --tertiaryColor: #59546C;
+    --quaternaryColor: #8B939C;
+    --quinaryColor: #FF0035;
+    --font-color: white;
+    --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font-size: 16px;
+
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+/* header, footer {
+    background-color: var(--secondaryColor);
+} 
+
+body {
+    background-color: var(--primaryColor);
+    color: var(--font-color);
+} */
