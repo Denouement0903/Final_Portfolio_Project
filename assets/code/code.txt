@@ -1,0 +1,32 @@
+
+        <!-- about -->
+        <section id="about">
+          <h2 class="text-center">About Me</h2>
+          <p>I enjoy solving complex problems and always take a logical, practical approach towards them </p>
+
+
+        </section>
+
+        <!-- work/education~skills section inside -->
+        <section id="work/education">
+            <h2>Work/Education</h2>
+        </section>
+
+        <!-- project section -->
+        <section id="projects">
+            <h2>Projects</h2>
+        </section>
+
+        <!-- testimonials -->
+        <section id="testimonials">
+            <h2>Testimonials</h2>
+        </section>
+
+        <!-- contact -->
+        <section id="contact">
+            <h2>Contact</h2>
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2022</p>
+    </footer>

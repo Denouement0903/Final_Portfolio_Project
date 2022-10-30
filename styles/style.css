@@ -18,6 +18,11 @@
     box-sizing: border-box;
     
 }
+/* @media screen and (min-width) {
+    #description {
+        margin: 20px 10px;
+    }
+} */
 /* header, footer {
     background-color: var(--secondaryColor);
 } 
