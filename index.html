@@ -22,13 +22,14 @@
 
     <div class="offcanvas-lg offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Explore</h5>
+        <h5 class="offcanvas-title shadow rounded-2" id="offcanvasResponsiveLabel">Explore</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">
+              <!-- logo -->
+              <a class="navbar-brand shadow" href="#">
                 <img src="https://i.postimg.cc/wB0xyp1q/icons8-d-67.png" alt="logo">
               </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -71,44 +72,123 @@
       </header>
   <!-- landing page -->
     <main class="contaier-fluid bg-secondary bg-opacity-50">
-        <!-- home -->
-        <section id="home">
-            <div class="container-fluid border border-2 border-dark">
-              <div class="row">
-                <div class="col-6">
-                  <!-- carousel -->
-                  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                    <div class="carousel-inner w-100">
-                      <div class="carousel-item active">
-                        <img src="https://i.postimg.cc/NMKYVRcJ/D1.jpg" class="img-fluid d-block w-100 border border-dark border-2 rounded-1" alt="D1">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://i.postimg.cc/MGT8M1v6/D2.jpg" class="img-fluid d-block w-100 border border-dark border-2 rounded-1" alt="D2">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="https://i.postimg.cc/YqccthgP/D3.jpg" class="img-fluid d-block w-100 border border-dark border-2 rounded-1" alt="D3">
+            <!-- home -->
+            <section id="home">
+                <div class="container-fluid border border-2 border-dark">
+                  <div class="row">
+                    <div class="col-6">
+                      <!-- carousel -->
+                      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner w-100">
+                          <div class="carousel-item active">
+                            <img src="https://i.postimg.cc/NMKYVRcJ/D1.jpg" class="img-fluid d-block w-100 border border-dark border-2 rounded-1" alt="D1">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://i.postimg.cc/MGT8M1v6/D2.jpg" class="img-fluid d-block w-100 border border-dark border-2 rounded-1" alt="D2">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://i.postimg.cc/YqccthgP/D3.jpg" class="img-fluid d-block w-100 border border-dark border-2 rounded-1" alt="D3">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                          <span class="carousel-control-prev" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                          <span class="carousel-control-next" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
                       </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                      <span class="carousel-control-prev" aria-hidden="true"></span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                      <span class="carousel-control-next" aria-hidden="true"></span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="col-6 w-50 my-auto">
+                      <h1 id="name"><strong>Deno Rautenbach</strong></h1>
+                      <h2>Future Web Developer</h2>
+                      <p class="lead shadow text-black">Need help designing a website?</p>
+                      <p class="lead shadow text-black">Look no further. Why?</p>
+                      <p class="lead shadow text-black"> Because I am here...</p>
+                      <br>
+                      <!-- icons for social media -->
+                      <div class="icons mx-auto">
+                        <div class="row">
+                          <ul id="social_icons" class="list-unstyled d-flex align-content-center justify-content-center  gap-5">
+                            <li><a href="https://github.com/Simp4Hitagi/Final_Portfolio_Project"><i class="fa-brands fa-github fa-2x"></i></a></li>
+                            <li><a href="https://www.linkedin.com/feed/?trk=homepage-basic_google-one-tap-submit"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+                            <li><a href="https://github.com/twitter"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <div class="col-6 w-50 my-auto">
-                  <h1><strong>Deno Rautenbach</strong></h1>
-                  <h2>Future Web Developer</h2>
-                  <p>Need help designing a website? Look no further. Why? Because I am here.</p>
+            </section>
+            <br>
+            <!-- about -->
+            <section id="about">
+              <div class="container-fluid bg-secondary bg-opacity-50 border border-2 border-dark">
+                <div class="row">
+                  <div class="col-5 m-auto">
+                    <h1 class="shadow text-center">About Me</h1>
+                  </div>
+                  <div class="col-7 my-3">
+                    <p class="lead shadow text-black">I am an aspiring Web Developer with a keen interest in building projects to solve a need.
+                    What might that need be?
+                  </p>
+                  <p class="lead shadow text-black">I specialize in Full Stack Development. This includes Front-End as well as Backend. </p>
+                  <p class="lead shadow text-black">
+                    In my free time you'll find me in front of a computer screen learning something new. Be it a Language, Programming language, Mathematics, Philosophy, Mythology or even Classical Literature. My favorite pass time is learning something new! 
+                    Even so, I still enjoy sports and any outdoor activity just to be closer to nature.
+                  </p>
+                  <!-- button to services/form -->
+                  <button type="button" class="btn btn-outline-dark my-3">Let's Talk</button>
+                    <!-- list group -->
+                    <h3 class="shadow">Personal Details</h3>
+                    <ul class="list-group border-2 border-dark list-unstyled gap-2">
+                      <li class="list-group-item-dark rounded-2 p-2">9 March 2003</li>
+                      <li class="list-group-item-dark rounded-2 p-2">02 Tokai Road, Tokai Forest, Cape Town, 7945</li>
+                      <li class="list-group-item-dark rounded-2 p-2">Colored</li>
+                      <li class="list-group-item-dark rounded-2 p-2">No criminal record</li>
+                      <li class="list-group-item-dark rounded-2 p-2">0303095358089</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-            </div>
-        </section>
+            </section>
 
+          <!-- work/education~skills section inside -->
+          <section id="work/education">
+        <div class="container-fluid">
+          <div class="row">
+        <!-- education  -->
+        <div class="col-6">
+          <h3 class="shadow my-2">Education</h3>
+          <!-- table -->
+          <table class="table table-dark table-hover">
+            <tr>
+              <th>School</th>
+              <th>11</th>
+              <th>11</th>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>2018</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+          </table>
+        </div>
+            <div class="col-6 my-auto text-center">
+              <h1 id="work_edu"class="shadow my-auto">Work/Education</h1>
+            </div>
+          </div>
+        </div>
+          </div>
+          </section>
     <!-- kit code for icons -->
-<script src="https://kit.fontawesome.com/3f7306740c.js" crossorigin="anonymous"></script>  
+<script src="https://kit.fontawesome.com/3f7306740c.js" crossorigin="anonymous"></script>
+</main>
 </body>
 </html>

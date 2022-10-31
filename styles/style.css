@@ -7,6 +7,8 @@
     --font-color: white;
     --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --font-size: 16px;
+    --block-elementHeight: 100px;
+    --block-elementWidth: 10px;
 
 }
 
@@ -18,11 +20,44 @@
     box-sizing: border-box;
     
 }
-/* @media screen and (min-width) {
-    #description {
-        margin: 20px 10px;
+/* for navbar items hover effect */
+.nav-item:hover {
+    background-color: var(--quaternaryColor);
+}
+
+/* education timeline */
+#first {
+    margin: 0px;
+    height: var(--block-elementHeight);
+}
+
+#second {
+    margin: 50px;
+    height: var(--block-elementHeight);
+}
+
+#third {
+    margin: 0px;
+    height: var(--block-elementHeight);
+}
+
+
+ /* @media screen and (min-width: 300px) {
+    #name {
+        font-size: 24px;
+        /* text-decoration: underline; 
     }
-} */
+    #social_icons {
+        display: flex;
+        flex-direction: column;
+    }
+    #work_edu {
+        font-size: 18px;
+
+    }
+
+}*/
+
 /* header, footer {
     background-color: var(--secondaryColor);
 } 
