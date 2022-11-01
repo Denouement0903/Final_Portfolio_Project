@@ -22,47 +22,42 @@
 }
 /* for navbar items hover effect */
 .nav-item:hover {
+    background-color: var(--secondaryColor);
+    border-radius: 10px;
+}
+.nav-link:hover {
+    background-color: var(--secondaryColor);
+    border-radius: 10px;
+}
+.nav-item:hover {
     background-color: var(--quaternaryColor);
 }
 
-/* education timeline */
-#first {
-    margin: 0px;
-    height: var(--block-elementHeight);
+
+.col-4 {
+    border-left: 10px solid var(--primaryColor);
+    padding-left: 10px;
+    border-top: 5px solid var(--quaternaryColor);
+
 }
 
-#second {
-    margin: 50px;
-    height: var(--block-elementHeight);
+#exp_h3 {
+    border: none;
 }
 
-#third {
-    margin: 0px;
-    height: var(--block-elementHeight);
+/* end */
+
+/* progress bar */
+
+.progress-bar {
+    height: 3vh;
+    
 }
 
 
- /* @media screen and (min-width: 300px) {
-    #name {
-        font-size: 24px;
-        /* text-decoration: underline; 
+
+@media screen and (min-width: 300px) and (max-width: 720px) {
+    h1, h2 ,h3, h4, h5, h6, .icons {
+        transform: scale(0.7);
     }
-    #social_icons {
-        display: flex;
-        flex-direction: column;
-    }
-    #work_edu {
-        font-size: 18px;
-
-    }
-
-}*/
-
-/* header, footer {
-    background-color: var(--secondaryColor);
-} 
-
-body {
-    background-color: var(--primaryColor);
-    color: var(--font-color);
-} */
+}

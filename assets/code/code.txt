@@ -46,4 +46,138 @@ Three blocks goin down
               </div>
             </div>
           </div>
+CSS: /* education timeline */
+#first {
+    margin: 0px;
+    height: var(--block-elementHeight);
+}
+
+#second {
+    margin: 50px;
+    height: var(--block-elementHeight);
+}
+
+#third {
+    margin: 0px;
+    height: var(--block-elementHeight);
+}
+
+
+
+1st attempt at Work/Education section
+          <section id="work/education">
+        <div class="container-fluid">
+          <div class="row">
+        <!-- education  -->
+        <div class="col-6">
+          <h3 class="shadow my-2">Education</h3>
+          <!-- table -->
+          <table class="table table-dark table-hover">
+            <tr>
+              <th>School</th>
+              <th>11</th>
+              <th>11</th>
+            </tr>
+            <tr>
+              <td>2016</td>
+              <td>1</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>2018</td>
+              <td>2</td>
+              <td>2</td>
+            </tr>
+          </table>
+        </div>
+            <div class="col-6 my-auto text-center">
+              <h1 id="work_edu"class="shadow my-auto">Work/Education</h1>
+            </div>
+          </div>
+        </div>
+          </div>
+          </section>
+
+Media Query:
+
+ /* @media screen and (min-width: 300px) {
+    #name {
+        font-size: 24px;
+        /* text-decoration: underline; 
+    }
+    #social_icons {
+        display: flex;
+        flex-direction: column;
+    }
+    #work_edu {
+        font-size: 18px;
+
+    }
+
+}*/
+
+/* header, footer {
+    background-color: var(--secondaryColor);
+} 
+
+body {
+    background-color: var(--primaryColor);
+    color: var(--font-color);
+} */
+
+
+Timeline:
+        <!-- timeline start -->
+            <h5>Education</h5>
+            <div class="edu_timeline">
+              <div class="container">
+                <div class="content">
+                  <h4>Jan 2016</h4>
+                   <p>Start of highschool</p>
+                </div>
+              </div>
+            </div>
+            <div class="container">
+              <div class="content">
+                <h4>Dec 2021</h4>
+                 <p>End of highschool</p>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+          <!-- experience start -->
+          <h5>Work-Experience</h5>
+          <div class="exp_timeline">
+            <div class="container">
+              <div class="content">
+                <h4>Aug 2020</h4>
+                <p>Start of Job</p>
+              </div>
+            </div>
+            <div class="container">
+              <div class="content">
+                <h4>Mar 2021</h4>
+              </div>
+            </div>
+          </div>
+          <!-- end -->
+
+Timeline2:
+
+            <!-- only title -->
+              <div class="container">
+                <div class="row">
+                  <div class="col-6">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, sunt deserunt. Iure non nesciunt veritatis itaque hic nemo doloremque ducimus facilis ipsum incidunt perferendis, libero deleniti ex mollitia recusandae saepe?
+                    Velit unde debitis qui autem nam a reprehenderit, quos illum ullam ea tempora nobis placeat temporibus sed saepe asperiores aperiam, soluta perspiciatis doloribus provident! Libero repellendus ad nihil quas ea.
+                  </div>
+                  <div class="col-6">
+                    <h1 class="shadow-lg text-center m-auto my-5">Work/Education</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
 
