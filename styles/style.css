@@ -20,6 +20,7 @@
     box-sizing: border-box;
     
 }
+
 /* for navbar items hover effect */
 .nav-item:hover {
     background-color: var(--secondaryColor);
@@ -41,7 +42,7 @@
 
 }
 
-#exp_h3 {
+#exp_h3, #cards  {
     border: none;
 }
 
@@ -54,10 +55,22 @@
     
 }
 
+.card-img-overlay {
+   margin-left: 400px;
+}
+
 
 
 @media screen and (min-width: 300px) and (max-width: 720px) {
     h1, h2 ,h3, h4, h5, h6, .icons {
         transform: scale(0.7);
     }
+    table th { 
+        display: none;
+    }
+    table td {
+        display: flex;
+    }
+
+
 }
