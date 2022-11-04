@@ -16,7 +16,7 @@
   </head>
   <body>
   <!-- navigation -->
-  <header class="bg-secondary bg-opacity-75">
+  <header class="bg-secondary bg-opacity-75 position-fixed d-flex flex-column flex-md-row">
     <!-- offcanvas -->
     <button class="btn d-lg-none bg-body bg-opacity-75" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="fa-solid fa-bars"></i></button>
 
@@ -71,7 +71,7 @@
     </div>
       </header>
   <!-- landing page -->
-    <main class="contaier-fluid bg-secondary bg-opacity-50">
+    <main class="contaier-fluid bg-secondary bg-opacity-50 d-flex flex-column flex-md-row">
             <!-- home -->
             <section id="home">
                 <div class="container-fluid border border-2 border-dark">
@@ -81,7 +81,7 @@
                       <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                         <div class="carousel-inner w-100">
                           <div class="carousel-item active">
-                            <img src="https://i.postimg.cc/NMKYVRcJ/D1.jpg" class="img-fluid d-block w-100 border border-dark border-2 rounded-1" alt="D1">
+                            <img src="https://i.postimg.cc/B6L7h7mX/DE2.jpg" class="img-fluid d-block w-100 border border-dark border-2 rounded-1" alt="D1">
                           </div>
                           <div class="carousel-item">
                             <img src="https://i.postimg.cc/MGT8M1v6/D2.jpg" class="img-fluid d-block w-100 border border-dark border-2 rounded-1" alt="D2">
@@ -121,16 +121,15 @@
                   </div>
                 </div>
             </section>
-            <br>
             <!-- about -->
-            <section id="about">
-              <div class="container-fluid bg-secondary bg-opacity-50 border border-2 border-dark">
+            <section id="about" class="w-100">
+              <div class="container-fluid bg-secondary bg-opacity-50 border border-2 border-dark h-100 my-5">
                 <div class="row">
                   <div class="col-5 m-auto">
                     <h1 class="shadow text-center">About Me</h1>
                   </div>
                   <div class="col-7 my-3">
-                    <p class="lead shadow text-black">I am an aspiring Web Developer with a keen interest in building projects to solve a need.
+                    <p class="lead shadow text-black my-5">I am an aspiring Web Developer with a keen interest in building projects to solve a need.
                     What might that need be?
                   </p>
                   <p class="lead shadow text-black">I specialize in Full Stack Development. This includes Front-End as well as Backend. </p>
@@ -228,12 +227,12 @@
 
           </section>
           </section>
-
+          <br>
          <!-- project section -->
          <section id="projects">
           <div class="container-fluid bg-secondary bg-opacity-50">
             <div class="row">
-              <div class="col-6">
+              <div class="col-5">
                 <h2 class="shadow m-auto my-5">Projects</h2>
               </div>
               <div class="col-6">
@@ -266,29 +265,27 @@
                     </tr>
                   </tbody>
                 </table>
-
                 </div>
-
               </div>
             </div>
           </div>
-          <!-- projects preview card -->
+          <!-- projects preview cards -->
           <div class="card bg-secondary">
             <h4 class="shadow my-3 text-center">Preview</h4>
-            <div class="row">
-              <div id="cards" class="col-3">
+            <div class="row d-flex flex-column flex-md-row m-auto gap-2">
+              <div id="cards" class="col-6">
                 <!-- card 1 -->
-                <div class="card mx-3" style="width: 18rem;">
+                <div class="card m-auto" style="width: 18rem;">
                   <img src="https://i.postimg.cc/wxG5QqDq/DS-1.png" class="card-img-top" alt="Website Screenshot">
                   <div class="card-body">
                     <h5 class="card-title">Bootstrap Portfolio Project</h5>
-                    <p class="card-text">I built this project using HTML, CSS and mostly Bootstrap for the responsiveness.</p>
+                    <p class="card-text">I built this project using HTML, CSS and mostly Bootstrap for the responsiveness. It</p>
                   </div>
                 </div>
               </div>
-              <div id="cards" class="col-3">
+              <div id="cards" class="col-6">
                 <!-- card 2 -->
-                <div class="card mx-3" style="width: 18rem;">
+                <div class="card m-auto" style="width: 18rem;">
                   <img src="https://i.postimg.cc/XJSPbLtp/DS-2.png" alt="Website Screenshot 2">
                   <div class="card-body">
                     <h5 class="card-title">Tribute Page</h5>
@@ -296,86 +293,114 @@
                   </div>
                 </div>
               </div>
-              <div id="cards" class="col-3">
-                <!-- card 3 -->
-                <div class="card mx-3" style="width: 18rem;">
-                  <img src="" class="card-img-top" alt="Website Screenshot 3">
-                  <div class="card-body">
-                    <h5 class="card-title">Python</h5>
-                    <p class="card-text">Dictionary app</p>
-                  </div>
-                </div>
-
-
-              </div>
             </div>
           </div>
          </section>
-
+         <br>
          <!-- testimonials  -->
          <section id="testimonials">
-          <h2 class="shadow text-center">Testimonials</h2>
+          <h2 id="h2_testimonials" class="shadow text-center">Testimonials</h2>
           <div class="testimonials">
-            <div class="row">
+            <div class="row d-flex flex-column flex-md-row">
               <div class="col card text-bg-dark">
                 <!-- Joel -->
-                  <img src="https://i.postimg.cc/Ghbvn8KL/Joel-Profile.jpg" class="card-img" style="width: 25rem;" alt="Joel">
-                  <div class="card-img-overlay">
+                  <img id="Joel_Img" src="https://i.postimg.cc/Ghbvn8KL/Joel-Profile.jpg" class="card-img img-fluid" style="width: 25rem;" alt="Joel">
+                  <div  id="Joel" class="card-img-overlay">
                     <h4 class="card-title bg-dark bg-opacity-75" style="width: 20rem;">Joel Mukanya</h4>
                     <h6 class="bg-dark bg-opacity-75" style="width: 20rem;">LC lecturer</h6>
                     <p class="card-text bg-dark bg-opacity-75 fst-italic" style="width: 20rem;">Deno is a very creative, go-getter, and well-behaved student. He does enjoy working with his classmates and works well on his project.
                       He has gained knowledge of web development, including Bootstrap 5. I will be very delighted to see him get hired as a developer.</p>
                   </div>
+                <!-- Cassidy Manuel -->
+                <div class="col card text-bg-dark">
+                  <img id="Cassidy_Img" src="https://i.postimg.cc/RFPQjTnH/Cassidy.jpg" class="card-img img-fluid mx-5 my-5" style="width: 20rem;" alt="Cassidy">
+                  <div id="Cassidy" class="card-img-overlay">
+                    <h4 class="card-title bg-dark bg-opacity-75" style="width: 20rem;">Cassidy Manuel</h4>
+                    <h6 class="bg-dark bg-opacity-75" style="width: 20rem;">LC Studio Intern</h6>
+                    <p class="card-text bg-dark bg-opacity-75 fst-italic" style="width: 20rem;">Deno is respectful, dedicated and a driven individual. He thrives in a team work environment and I would highly recommend him.</p>
+                  </div>
+                  </div>
+                </div>
               <div class="col card text-bg-dark">
                 <!-- Umayar -->
-                  <img src="https://i.postimg.cc/bY15qwDC/Umayar.jpg" class="card-img" style="width: 25rem;" alt="Umayar">
-                  <div class="card-img-overlay">
+                  <img src="https://i.postimg.cc/bY15qwDC/Umayar.jpg" class="card-img img-fluid" style="width: 25rem;" alt="Umayar">
+                  <div id="Umayr" class="card-img-overlay">
                     <h4 class="card-title bg-dark bg-opacity-75" style="width: 20rem;">Umayr Nordien</h4>
                     <h6 class="bg-dark bg-opacity-75" style="width: 20rem;">Student</h6>
                     <p class="card-text bg-dark bg-opacity-75 fst-italic" style="width: 20rem;">I know I can depend on Deno to collaborate with on both large scale projects and smaller casual ones. He is steadfast in his ethical behavior and does not budge from these values according from what I've learned from a professional capacity. In a casual manner he's a friendly person and considerate of others and has a good mentality and outlook on life.</p>
               </div>
               <!-- Uzukhanye -->
               <div class="col card text-bg-dark">
-                    <img src="https://i.postimg.cc/g0CwdWnp/Uzukhanye.jpg" class="card-img" style="width: 25rem;" alt="Uzukhanye">
-                    <div class="card-img-overlay">
+                    <img src="https://i.postimg.cc/g0CwdWnp/Uzukhanye.jpg" class="card-img img-fluid" style="width: 25rem;" alt="Uzukhanye">
+                    <div id="Uzukhanye" class="card-img-overlay">
                       <h4 class="card-title bg-dark bg-opacity-75" style="width: 20rem;">Uzukhanye Dywili</h4>
                       <h6 class="bg-dark bg-opacity-75" style="width: 20rem;">Student</h6>
                       <p class="card-text bg-dark bg-opacity-75 fst-italic" style="width: 20rem;">Thoughtful, hardworker, caring, smart, and confident are words that best describe Deno. A person who willingly goes an extra mile to get things done.</p>
                 </div>
                 </div>
-              <!--Cassidy/Le-Andre/John/Jamie-Lee  -->
+              <!--Le-Andre/John/Jamie-Lee  -->
 
               </div>
             </div>
           </div>
          </section>
-
+         <br>
          <!-- contact -->
          <section id="contact">
            <div class="container-fluid">
              <div class="row">
                <div class="col-6">
                 <!-- form -->
+                <form action="https://formspree.io/f/xlevnzeq" method="POST">
+                  <div class="mb-3">
+                    <label for="for="exampleFormControlInput1" class="form-label">
+                      Name:
+                      <input type="text" class="form-text" placeholder="name" name="name" required>
+                    </label>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">
+                      Surname:
+                      <input type="text" class="form-text" placeholder="surname" name="surname" required>
+                    </label>
+                  </div>
                 <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="youremail@example.com">
+                  <label for="exampleFormControlInput1" class="form-label">Email address
+                  </label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="youremail@example.com" name="email" required>
                 </div>
                 <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
+                <!-- button for submitting -->
+                <button class="rounded-2 border-0 bg-black bg-opacity-25" type="submit">Submit</button>
               </div>
               <div class="col-6 m-auto">
                 <h4 class="shadow">Contact Me</h4>
               </div>
             </div>
           </div>
-
+        </form>
          </section>
-
-
-    <!-- kit code for icons -->
-<script src="https://kit.fontawesome.com/3f7306740c.js" crossorigin="anonymous"></script>
-</main>
+         <!-- kit code for icons -->
+         <script src="https://kit.fontawesome.com/3f7306740c.js" crossorigin="anonymous"></script>
+        </main>
+        <!-- footer -->
+        <footer class="bg-secondary">
+           <!-- icons for social media -->
+           <div class="icons mx-auto">
+             <div class="row">
+               <ul id="social_icons" class="my-3 d-flex align-content-center justify-content-center gap-5 list-unstyled">
+                 <li><a href="https://github.com/Simp4Hitagi/Final_Portfolio_Project"><i class="fa-brands fa-github fa-2x"></i></a></li>
+                 <li><a href="https://www.linkedin.com/feed/?trk=homepage-basic_google-one-tap-submit"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+                 <li><a href="https://github.com/twitter"><i class="fa-brands fa-twitter fa-2x"></i></a></li>
+               </ul>
+             </div>
+           </div>
+           <!-- Copyright -->
+           <p><strong>Copyright &copy; 2022</strong></p>
+           <br>
+        </footer>
 </body>
 </html>

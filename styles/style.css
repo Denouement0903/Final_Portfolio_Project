@@ -18,8 +18,30 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-color: var(--tertiaryColor); */
+    /* color: var(--secondaryColor); */
     
 }
+
+header {
+    position: sticky;
+    z-index: 50;
+}
+
+/* slide */
+main {
+    display: flex;
+}
+
+main section {
+    min-width: 100%;
+}
+
+body {
+    /* overflow: hidden; */
+    scroll-behavior: smooth;
+}
+
 
 /* for navbar items hover effect */
 .nav-item:hover {
@@ -46,10 +68,6 @@
     border: none;
 }
 
-/* end */
-
-/* progress bar */
-
 .progress-bar {
     height: 3vh;
     
@@ -58,6 +76,26 @@
 .card-img-overlay {
    margin-left: 400px;
 }
+
+/* animation */
+section {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
 
 
 
@@ -72,5 +110,60 @@
         display: flex;
     }
 
+    .testimonials {
+        display: flex;
+        flex-direction: column wrap;
+    }
+    .card-img-overlay {
+        margin: auto;
+        transform: scale(0.7);
+     }
 
+     #testimonials {
+        position: relative;
+     }
+
+     #h2_testimonials {
+        position: absolute;
+     }
+
+     #Joel {
+        /* margin: 100px 0px px; */
+        transform: scale(1);
+     }
+
+     #Joel_Img {
+        transform: scale(1.2);
+     }
+
+     #Cassidy {
+        margin: 360px 60px;
+        transform: scale(1);
+     }
+
+     #Cassidy_Img {
+        transform: scale(1);
+     }
+
+     #Umayr {
+        transform: scale(0.9);
+        margin: 160px 0px 0px;
+     }
+
+     #Uzukhanye {
+        margin: 250px 30px;
+        transform: scale(1.1);
+     }
+     main {
+        display: flex;
+    }
+    
+    main section {
+        min-width: 100%;
+    }
+    section {
+        overflow: hidden;
+    }
+    
 }
+
