@@ -3,7 +3,7 @@
     --secondaryColor: #38405F;
     --tertiaryColor: #59546C;
     --quaternaryColor: #8B939C;
-    --quinaryColor: #FF0035;
+    --quinaryColor: #c78895;
     --senaryColor: rgb(150, 57, 57);
     --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --font-size: 16px;
@@ -43,10 +43,20 @@ main section {
 } */
 
 i:hover {
-    animation: a_tag_edit 2s;
+    animation: font_color_iterate_a_edit_tag 2s infinite;
+    transition-delay: 4s;
+
 }
+
+.col-6-lazy {
+    transition: ease-in-out 0.8s;
+}
+
 .col-6-lazy:hover {
-    animation:  col_6_edit 1s;
+    /* animation: col_6_edit 1s; */
+    transform: scale(1.1);
+    transition-delay: 4s;
+    
 }
 
 h1, h2 ,h3, h4, h5, h6 {
@@ -56,6 +66,8 @@ h1, h2 ,h3, h4, h5, h6 {
 
 h1:hover,h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
     animation: headings_size 1s ease-out;
+    animation: font_color_iterate 1s infinite;
+    transition-delay: 3s;
 }
 
 body {
@@ -119,33 +131,36 @@ section:hover {
     transform: scale(1.1);
 }
 
-
-
-
-@keyframes font_color_iterate {
+/* animation */
+@keyframes font_color_iterate_a_edit_tag {
     0% {
         color: var(--primaryColor);
+        scale: 1;
     }
     20% {
         color: var(--secondaryColor);
+        scale: 1.1;
     }
     40% {
         color: var(--tertiaryColor);
+        scale: 1.2;
     }
     60% {
-        color: var(--quaternaryColor)
+        color: var(--quaternaryColor);
+        scale: 1.3;
     }
     80% {
-        color: var(--quinaryColor)
+        color: var(--quinaryColor);
+        scale: 1.4;
     }
     100% {
-        color: var(--senaryColor)
+        color: var(--senaryColor);
+        scale: 1.5;
     }
 }
 
 
 
-/* animation */
 @keyframes headings_size {
     0% {
         /* transform: scale(0.5); */
@@ -162,17 +177,7 @@ section:hover {
     }
 }
 
-@keyframes a_tag_edit {
-    0% {
-        scale: 1;
-    }
-    50% {
-       scale: 1.5;
-    }
-    100% {
-        scale: 2;
-    }
-}
+
 
 @keyframes col_6_edit {
     0% {
@@ -242,16 +247,6 @@ section:hover {
         margin: 250px 30px;
         transform: scale(1.1);
      }
-     /* main {
-        display: flex;
-    }
-    
-    main section {
-        min-width: 100%;
-    }
-    section {
-        overflow: hidden;
-    } */
     
 }
 
