@@ -4,7 +4,7 @@
     --tertiaryColor: #59546C;
     --quaternaryColor: #8B939C;
     --quinaryColor: #FF0035;
-    --font-color: white;
+    --senaryColor: rgb(150, 57, 57);
     --font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     --font-size: 16px;
     --block-elementHeight: 100px;
@@ -18,15 +18,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background-color: var(--tertiaryColor); */
-    /* color: var(--secondaryColor); */
+    /* animation: font_color_iterate 3s infinite ease-in; */
+    /* transition-delay: 4s; */
     
 }
 
  
 
 header {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     min-height: 70px;
     width: 100%;
@@ -41,6 +41,14 @@ header {
 main section {
     min-width: 100%;
 } */
+
+i:hover {
+    animation: a_tag_edit 2s;
+}
+.col-6-lazy:hover {
+    animation:  col_6_edit 1s;
+}
+
 h1, h2 ,h3, h4, h5, h6 {
     text-align: center;
 
@@ -111,20 +119,70 @@ section:hover {
     transform: scale(1.1);
 }
 
+
+
+
+@keyframes font_color_iterate {
+    0% {
+        color: var(--primaryColor);
+    }
+    20% {
+        color: var(--secondaryColor);
+    }
+    40% {
+        color: var(--tertiaryColor);
+    }
+    60% {
+        color: var(--quaternaryColor)
+    }
+    80% {
+        color: var(--quinaryColor)
+    }
+    100% {
+        color: var(--senaryColor)
+    }
+}
+
+
+
 /* animation */
 @keyframes headings_size {
     0% {
         /* transform: scale(0.5); */
         box-shadow: var(--primaryColor);
-        transition: all 2s;
+        transition: all;
     }
     50% {
-        transition: all 2s;
-        
+        transition: all 4s;
+        background-color: var(--tertiaryColor);
+
     }
     100% {
-        transition: all 2s;
-        background-color: var(--tertiaryColor);
+        transition: all 4s;
+    }
+}
+
+@keyframes a_tag_edit {
+    0% {
+        scale: 1;
+    }
+    50% {
+       scale: 1.5;
+    }
+    100% {
+        scale: 2;
+    }
+}
+
+@keyframes col_6_edit {
+    0% {
+        transform-style: flat;
+    }
+    50% {
+        scale: 0.5;
+    }
+    100% {
+        scale: 1;
     }
 }
 
