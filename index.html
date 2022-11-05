@@ -14,19 +14,20 @@
     <!-- JavaScript Bundle with Popper link for Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous" defer></script>
   </head>
-  <body>
-  <!-- navigation -->
-  <header class="contianer-fluid bg-secondary bg-opacity-75 position-fixed d-flex flex-column flex-md-row">
+  <body class="position-relative">
+  <!-- header -->
+  <header class="contianer-fluid bg-secondary bg-opacity-25">
     <!-- offcanvas -->
     <button class="btn d-lg-none bg-body bg-opacity-75" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="offcanvasResponsive"><i class="fa-solid fa-bars"></i></button>
 
-    <div class="offcanvas-lg offcanvas-end bg-black bg-opacity-50 d-flex align-content-center justify-content-center rounded-3" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+    <div class="offcanvas-lg offcanvas-end bg-black bg-opacity-50 d-flex align-content-center justify-content-center" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
       <div class="offcanvas-header">
         <h5 class="offcanvas-title shadow rounded-2 text-bg-light" id="offcanvasResponsiveLabel">Explore</h5>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
       </div>
       <div class="container-fluid offcanvas-body bg-black bg-opacity-75">
-        <nav class="navbar navbar-expand-lg bg-secondary bg-opacity-75">
+        <!-- navigation -->
+        <nav class="navbar navbar-expand-lg bg-secondary bg-opacity-25 w-100">
             <div class="container-fluid">
               <!-- logo -->
               <a class="navbar-brand shadow" href="#">
@@ -36,7 +37,7 @@
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav gap-2">
+                <ul class="navbar-nav gap-2 m-auto">
                   <li class="nav-item">
                     <a class="nav-link active bg-dark bg-opacity-25 rounded-2 d-flex justify-content-evenly border border-dark border-2" aria-current="page" href="#home">Home</a>
                   </li>
@@ -44,7 +45,7 @@
                     <a class="nav-link bg-dark bg-opacity-25 rounded-2 d-flex justify-content-evenly border border-dark border-2" href="#about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link bg-dark bg-opacity-25 rounded-2 d-flex justify-content-evenly border border-dark border-2" href="#work/education">Work/Education</a>
+                    <a class="nav-link bg-dark bg-opacity-25 rounded-2 d-flex justify-content-evenly border border-dark border-2" href="#work_education">Work_Education</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle bg-dark bg-opacity-25 rounded-2 text-center border border-dark border-2" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -71,10 +72,10 @@
     </div>
       </header>
   <!-- landing page -->
-    <main class="contaier-fluid bg-secondary bg-opacity-50 d-flex flex-column flex-md-row">
+    <main class="container-fluid bg-secondary bg-opacity-50">
             <!-- home -->
-            <section id="home">
-                <div class="container-fluid border border-2 border-dark">
+            <section class="" id="home">
+                <div class="container-fluid">
                   <div class="row">
                     <div class="col-6 border-0">
                       <!-- carousel -->
@@ -122,8 +123,8 @@
                 </div>
             </section>
             <!-- about -->
-            <section id="about" class="w-100">
-              <div class="container-fluid bg-secondary bg-opacity-50 border border-2 border-dark h-100 my-5">
+            <section id="about" class="">
+              <div id="con_about" class="container-fluid bg-secondary bg-opacity-50 h-100 my-5">
                 <div class="row">
                   <div class="col-5 m-auto">
                     <h1 class="shadow text-center">About Me</h1>
@@ -138,7 +139,7 @@
                     Even so, I still enjoy sports and any outdoor activity just to be closer to nature.
                   </p>
                   <!-- button to services/form -->
-                  <button type="button" class="btn btn-outline-dark my-3">Let's Talk</button>
+                  <button type="button" class="btn btn-outline-dark my-3"><a href="#contact">Let's Talk</a></button>
                     <!-- list group -->
                     <h3 class="shadow">Personal Details</h3>
                     <ul class="list-group border-2 border-dark list-unstyled gap-2">
@@ -152,23 +153,57 @@
                 </div>
               </div>
             </section>
-            <br>
-          <!-- work/education~skills section inside -->
-          <section id="work/education" class="border border-2 border-dark">
+          
+          <!-- work_education~skills section inside -->
+          <section id="work_education" class="bg-black bg-opacity-10">
+            <h1 class="shadow my-5 mx-auto">Work_Education</h1>
+            <!-- skills -->
+            <section class="bg-secondary border-1 border-top-0 border-dark">
+              <div class="skills">
+                <div class="row d-flex">
+                  <div class="col-6 bg-primary bg-opacity-25">
+                    <!-- progress bar -->
+                    <div class="progress my-3">
+                      <div class="progress progress-bar bg-secondary bg-opacity-50 gap-1" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+                        <h6>HTML</h6>
+                      </div>
+                    </div>
+                    <div class="progress my-3">
+                      <div class="progress-bar bg-secondary" role="progressbar" aria-label="Info example" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                      <h6>CSS</h6>
+                      </div>
+                    </div>
+                    <div class="progress my-3">
+                      <div class="progress-bar bg-black bg-opacity-75" role="progressbar" aria-label="Warning example" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                      <h6>Bootstrap</h6>
+                      </div>
+                    </div>
+                    <div class="progress my-3">
+                      <div class="progress-bar bg-black" role="progressbar" aria-label="Danger example" style="width: 55%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                      <h6>Python</h6>
+                      </div>
+                    </div>
+  
+                  </div>
+                  <div class="col-6 m-auto">
+                    <h3 class="shadow text-center bg-light bg-opacity-25">Skills</h3>
+                  </div>
+                </div>
+              </div>
+  
+            </section>
             <!-- only title -->
             <div class="container">
               <div class="row">
-                <div class="col-4 text-center m-auto border-0">
-                  <h1 class="shadow my-2">Work/Education</h1>
-                </div>
-                <h3 class="mx-1 my-2 shadow">Education</h3>
-                <div class="col-4">
-                  <h4 class="shadow">Jan 2016</h4>
+                <!-- education -->
+                <div class="col-6">
+                  <h3 class="mx-1 my-2 shadow">Education</h3>
+                  <h4 class="shadow">15 Jan 2017</h4>
                   <h5>Start of highschool</h5>
-                  <p>I started grade 8 at Villiersdorp Secondary School.</p>
+                  <p class="lead shadow text-black">I started grade 8 at Villiersdorp Secondary School.</p>
                   <h4 class="shadow">Dec 2021</h4>
                   <h5>End of highschool</h5>
-                  <p>I matriculated with a Bachelors pass.</p>
+                  <p class="lead shadow text-black">I matriculated with a Bachelors pass.</p>
                   <h6>Subjects</h6>
                   <ul>
                     <li>Afrikaans HL</li>
@@ -179,94 +214,90 @@
                     <li>Computer Applications Technology</li>
                     <li>Life Orientation</li>
                   </ul>
+                  <h6>Achievements</h6>
+                  <p class="lead shadow text-black">I was Best in Afrikaans and English, 2nd best in Math, Geography and Computer Applications Technology, 3rd best in Life Science and achieved a distinction in English FAL in 2021 for Matric.</p>
                 </div>
-                <h3 class="mx-1 my-2 shadow">Experience</h3>
-                <div class="col-4">
-                  <h4 class="shadow">June 2020</h4>
-                  <p>Start of Job at <strong>Tech Nasty</strong></p>
-                  <h4>Mar 2021</h4>
-                  <p>End of Job</p>
+                <!-- experience -->
+                <div class="col-6">
+                  <h3 class="mx-1 my-2 shadow">Experience</h3>
+                  <h4 class="shadow">11 Feb 2020</h4>
+                  <h5>Start of Job at <strong>Tech Nasty</strong></h5>
+                  <p class="lead shadow text-black">During my time at Tech Nasty my designation was as an assistant in Information Technology and Computer repair.  This involved troubleshooting of hardware and software issues and repair as well as selling of technology and services. My key responsibilities included shop management and assistance.</p>
+                  <h4 class="shadow">15 Mar 2021</h4>
+                  <h6>End of Job</h6>
+                  <p class="lead shadow text-black">My reason for leaving was the indefinite closure of Tech Nasty.</p>
                 </div>
               </div>
             </div>
           </div>
           <br>
-          <!-- skills -->
-          <section class="bg-secondary border-1 border-top-0 border-dark">
-            <div class="skills">
-              <div class="row">
-                <div class="col-6 bg-primary bg-opacity-25">
-                  <!-- progress bar -->
-                  <div class="progress my-3">
-                    <div class="progress-bar bg-secondary bg-opacity-50 gap-1" role="progressbar" aria-label="Success example" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                      <h6>HTML</h6>
-                    </div>
-                  </div>
-                  <div class="progress my-3">
-                    <div class="progress-bar bg-secondary" role="progressbar" aria-label="Info example" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                    <h6>CSS</h6>
-                    </div>
-                  </div>
-                  <div class="progress my-3">
-                    <div class="progress-bar bg-black bg-opacity-75" role="progressbar" aria-label="Warning example" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                    <h6>Bootstrap</h6>
-                    </div>
-                  </div>
-                  <div class="progress my-3">
-                    <div class="progress-bar bg-black" role="progressbar" aria-label="Danger example" style="width: 55%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                    <h6>Python</h6>
-                    </div>
-                  </div>
-
-                </div>
-                <div class="col-6 m-auto">
-                  <h3 class="shadow text-center bg-light bg-opacity-25">Skills</h3>
-                </div>
-              </div>
-            </div>
-
           </section>
-          </section>
-          <br>
+        
          <!-- project section -->
          <section id="projects">
           <div class="container-fluid bg-secondary bg-opacity-50">
             <div class="row">
+              <!-- project title -->
               <div class="col-5">
                 <h2 class="shadow m-auto my-5">Projects</h2>
               </div>
+              <!-- project info -->
               <div class="col-6">
                 <h4 class="shadow my-3">Links</h4>
-                <!-- table -->
-                <table class="table table-dark table-hover my-3 table-responsive">
-                  <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">Github</th>
-                      <th scope="col">Netlify</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">1</th>
-                      <!-- github link -->
-                      <td><a href="https://github.com/Simp4Hitagi/Final_Portfolio_Project">Final_Portfolio_Project</a></td>
-                      <!-- netlify link -->
-                      <!-- still need to add latest netlify link when done -->
-                      <td><a href="deno-portfolio.netlify.app
-
-                        ">Final_Portfolio_Project</a></td>
-                      
-                    </tr>
-                    <tr>
-                      <th scope="row">2</th>
-                      <td><a href="https://github.com/Simp4Hitagi/myportfolio">Tribute Page</a></td>
-                      <!-- still need netlify link  -->
-                      <td><a href="deno-tributepage.netlify.app">Tribute Page</a></td>
-                    
-                    </tr>
-                  </tbody>
-                </table>
+                <!-- accordion start -->
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Github Project
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <a href="https://github.com/Simp4Hitagi/Final_Portfolio_Project">Final_Portfolio_Project</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Netlify Application for Project
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <a href="deno-portfolio1.netlify.app">Netlify Application</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Github Tribute Page
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <a href="https://github.com/Simp4Hitagi/excercise">Tribute Page</a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- added item 4 -->
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Netlify Tribute Page Application
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <a href="deno-tributepage.netlify.app">Tribute Page Application</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- accordion end -->
                 </div>
               </div>
             </div>
@@ -274,8 +305,7 @@
           <!-- projects preview cards -->
           <div class="card bg-secondary">
             <h4 class="shadow my-3 text-center">Preview</h4>
-            <div class="row d-flex flex-column flex-md-row m-auto gap-2">
-              <div id="cards" class="col-6">
+            <div class="row d-flex flex-column flex-md-row m-auto gap-5">
                 <!-- card 1 -->
                 <div class="card m-auto" style="width: 18rem;">
                   <img src="https://i.postimg.cc/wxG5QqDq/DS-1.png" class="card-img-top" alt="Website Screenshot">
@@ -284,8 +314,6 @@
                     <p class="card-text">I built this project using HTML, CSS and mostly Bootstrap for the responsiveness. It</p>
                   </div>
                 </div>
-              </div>
-              <div id="cards" class="col-6">
                 <!-- card 2 -->
                 <div class="card m-auto" style="width: 18rem;">
                   <img src="https://i.postimg.cc/XJSPbLtp/DS-2.png" alt="Website Screenshot 2">
@@ -296,57 +324,81 @@
                 </div>
               </div>
             </div>
+              </div>
           </div>
          </section>
-         <br>
+        
          <!-- testimonials  -->
          <section id="testimonials">
-          <h2 id="h2_testimonials" class="shadow text-center">Testimonials</h2>
-          <div class="testimonials">
-            <div class="row d-flex flex-column flex-md-row">
-              <div class="col card text-bg-dark">
-                <!-- Joel -->
-                  <img id="Joel_Img" src="https://i.postimg.cc/Ghbvn8KL/Joel-Profile.jpg" class="card-img img-fluid" style="width: 25rem;" alt="Joel">
-                  <div  id="Joel" class="card-img-overlay">
-                    <h4 class="card-title bg-dark bg-opacity-75" style="width: 20rem;">Joel Mukanya</h4>
-                    <h6 class="bg-dark bg-opacity-75" style="width: 20rem;">LC lecturer</h6>
-                    <p class="card-text bg-dark bg-opacity-75 fst-italic" style="width: 20rem;">Deno is a very creative, go-getter, and well-behaved student. He does enjoy working with his classmates and works well on his project.
-                      He has gained knowledge of web development, including Bootstrap 5. I will be very delighted to see him get hired as a developer.</p>
-                  </div>
-                <!-- Cassidy Manuel -->
-                <div class="col card text-bg-dark">
-                  <img id="Cassidy_Img" src="https://i.postimg.cc/RFPQjTnH/Cassidy.jpg" class="card-img img-fluid mx-5 my-5" style="width: 20rem;" alt="Cassidy">
-                  <div id="Cassidy" class="card-img-overlay">
-                    <h4 class="card-title bg-dark bg-opacity-75" style="width: 20rem;">Cassidy Manuel</h4>
-                    <h6 class="bg-dark bg-opacity-75" style="width: 20rem;">LC Studio Intern</h6>
-                    <p class="card-text bg-dark bg-opacity-75 fst-italic" style="width: 20rem;">Deno is respectful, dedicated and a driven individual. He thrives in a team work environment and I would highly recommend him.</p>
-                  </div>
-                  </div>
+           <h2 id="h2_testimonials" class="shadow text-center">Testimonials</h2>
+           <div class="testimonials">
+             <div class="row d-flex flex-column flex-md-row gap-md-2 align-content-center justify-content-center">
+            <!-- 1st card Joel -->
+            <div class="card" style="width: 18rem">
+              <img id="Joel_Img" src="https://i.postimg.cc/Ghbvn8KL/Joel-Profile.jpg" class="card-img-top img-fluid m-auto" style="width: 20rem;" alt="Joel">
+              <div class="card-body">
+                <div class="card-text">
+                  <h4 class="card-title bg-dark bg-opacity-75" style="width: 10rem;">Joel Mukanya</h4>
+                  <h6 class="bg-dark bg-opacity-75" style="width: 10rem;">LC lecturer</h6>
+                  <p class="lead text-center shadow">Deno is a very creative, go-getter, and well-behaved student. He does enjoy working with his classmates and works well on his project.
+                    He has gained knowledge of web development, including Bootstrap 5. I will be very delighted to see him get hired as a developer.</p>
                 </div>
-              <div class="col card text-bg-dark">
-                <!-- Umayar -->
-                  <img src="https://i.postimg.cc/bY15qwDC/Umayar.jpg" class="card-img img-fluid" style="width: 25rem;" alt="Umayar">
-                  <div id="Umayr" class="card-img-overlay">
-                    <h4 class="card-title bg-dark bg-opacity-75" style="width: 20rem;">Umayr Nordien</h4>
-                    <h6 class="bg-dark bg-opacity-75" style="width: 20rem;">Student</h6>
-                    <p class="card-text bg-dark bg-opacity-75 fst-italic" style="width: 20rem;">I know I can depend on Deno to collaborate with on both large scale projects and smaller casual ones. He is steadfast in his ethical behavior and does not budge from these values according from what I've learned from a professional capacity. In a casual manner he's a friendly person and considerate of others and has a good mentality and outlook on life.</p>
-              </div>
-              <!-- Uzukhanye -->
-              <div class="col card text-bg-dark">
-                    <img src="https://i.postimg.cc/g0CwdWnp/Uzukhanye.jpg" class="card-img img-fluid" style="width: 25rem;" alt="Uzukhanye">
-                    <div id="Uzukhanye" class="card-img-overlay">
-                      <h4 class="card-title bg-dark bg-opacity-75" style="width: 20rem;">Uzukhanye Dywili</h4>
-                      <h6 class="bg-dark bg-opacity-75" style="width: 20rem;">Student</h6>
-                      <p class="card-text bg-dark bg-opacity-75 fst-italic" style="width: 20rem;">Thoughtful, hardworker, caring, smart, and confident are words that best describe Deno. A person who willingly goes an extra mile to get things done.</p>
-                </div>
-                </div>
-              <!--Le-Andre/John/Jamie-Lee  -->
-
               </div>
             </div>
-          </div>
+            <!-- 2nd card Cassidy -->
+            <div class="card" style="width: 18rem">
+              <img id="Cassidy_Img" src="https://i.postimg.cc/RFPQjTnH/Cassidy.jpg" class="card-img-top img-fluid mx-auto my-auto" style="width: 20rem; height: 15rem; object-fit: cover;" alt="Cassidy">
+              <div class="card-body">
+                <div class="card-text">
+                  <h4 class="card-title bg-dark bg-opacity-75" style="width: 10rem;">Cassidy Manuel</h4>
+                  <h6 class="bg-dark bg-opacity-75" style="width: 10rem;">LC Studio Intern</h6>
+                    <p class="lead text-center shadow">Deno is respectful, dedicated and a driven individual. He thrives in a team work environment and I would highly recommend him.</p>
+                </div>
+              </div>
+            </div>
+            <!-- 3rd card Umayr -->
+            <div class="card" style="width: 18rem">
+              <img id="Umayr_Img" src="https://i.postimg.cc/bY15qwDC/Umayar.jpg" class="card-img-top img-fluid mx-auto my-auto" style="width: 20rem;" alt="Umayr">
+              <div class="card-body">
+                <div class="card-text">
+                  <h4 class="card-title bg-dark bg-opacity-75" style="width: 10rem;">Umayr Nordien</h4>
+                  <h6 class="bg-dark bg-opacity-75" style="width: 10rem;">Student</h6>
+                    <p class="lead text-center shadow">I know I can depend on Deno to collaborate with on both large scale projects and smaller casual ones. He is steadfast in his ethical behavior and does not budge from these values according from what I've learned from a professional capacity. In a casual manner he's a friendly person and considerate of others and has a good mentality and outlook on life.</p>
+                </div>
+              </div>
+            </div>
+            <!-- 2nd row -->
+            <div class="row d-flex flex-column flex-md-row gap-md-2 align-content-center justify-content-center">
+              <!-- 4th card Uzukhanye -->
+              <div class="card" style="width: 18rem">
+                <img id="Uzukhanye_Img" src="https://i.postimg.cc/g0CwdWnp/Uzukhanye.jpg" class="card-img-top img-fluid mx-auto my-auto" style="width: 20rem;" alt="Uzukhanye">
+                <div class="card-body">
+                  <div class="card-text">
+                    <h4 class="card-title bg-dark bg-opacity-75" style="width: 10rem;">Uzukhanye Dywili</h4>
+                    <h6 class="bg-dark bg-opacity-75" style="width: 10rem;">Student</h6>
+                      <p class="lead text-center shadow m-auto" style="width: 10rem;">Thoughtful, hardworker, caring, smart, and confident are words that best describe Deno. A person who willingly goes an extra mile to get things done.</p>
+                </div>
+                  </div>
+                </div>
+                <!--5th card John  -->
+              <div class="card m-0" style="width: 18rem">
+                <img id="John_Img" src="https://i.postimg.cc/9fWZj8Gg/John.jpg" class="card-img-top img-fluid mx-auto my-auto" style="width: 20rem;" alt="John">
+                <div class="card-body">
+                  <div class="card-text">
+                    <h4 class="card-title bg-dark bg-opacity-75" style="width: 10rem;">John-Bruce Noad</h4>
+                    <h6 class="bg-dark bg-opacity-75" style="width: 10rem;">Student</h6>
+                      <p class="lead text-center shadow m-auto" style="width: 10rem;">Deno is a self-confident and determined individual. Once he sets his mind to something, it is near impossible to shift his course.  Deno is not easily bothered by what others think or say about him, and is therefore easy to get along with. When it comes to his work, he is not afraid in the slightest to put his hard-working nature, and his amazing intellect on full display. I have enjoyed working alongside Deno, and can say with absolute confidence that he will be a great asset to any company that affords him the opportunity to present his value.</p>
+                </div>
+                  </div>
+                </div>
+              </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            </div>
          </section>
-         <br>
+        
          <!-- contact -->
          <section id="contact">
            <div class="container-fluid">

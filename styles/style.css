@@ -26,22 +26,47 @@
  
 
 header {
-    position: sticky;
+    position: fixed;
+    top: 0;
+    min-height: 70px;
+    width: 100%;
     z-index: 50;
 }
 
 /* slide */
-main {
+/* main {
     display: flex;
 }
 
 main section {
     min-width: 100%;
+} */
+h1, h2 ,h3, h4, h5, h6 {
+    text-align: center;
+
+}
+
+h1:hover,h2:hover, h3:hover, h4:hover, h5:hover, h6:hover {
+    animation: headings_size 1s ease-out;
 }
 
 body {
+    position: relative;
     /* overflow: hidden; */
-    scroll-behavior: smooth;
+    /* scroll-behavior: smooth; */
+}
+
+#home{
+    height: 800px;
+    margin-top: 90px;
+}
+
+section {
+    transition: all 2s;
+}
+
+section:hover {
+    box-shadow: 0 14px 28px var(--primaryColor);
 }
 
 
@@ -69,7 +94,6 @@ body {
 #exp_h3, #cards  {
     border: none;
 }
-
 .progress-bar {
     height: 3vh;
     
@@ -78,27 +102,31 @@ body {
 .card-img-overlay {
    margin-left: 400px;
 }
+/* card animation */
+.card {
+    transition: ease-in-out 0.8s;
+    cursor: pointer;
+}
+.card:hover {
+    transform: scale(1.1);
+}
 
 /* animation */
-section {
-	opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
+@keyframes headings_size {
+    0% {
+        /* transform: scale(0.5); */
+        box-shadow: var(--primaryColor);
+        transition: all 2s;
+    }
+    50% {
+        transition: all 2s;
+        
+    }
+    100% {
+        transition: all 2s;
+        background-color: var(--tertiaryColor);
+    }
 }
-
-@keyframes fadeInOpacity {
-	0% {
-		opacity: 0;
-	}
-	100% {
-		opacity: 1;
-	}
-}
-
-
-
 
 
 @media screen and (min-width: 300px) and (max-width: 720px) {
@@ -156,7 +184,7 @@ section {
         margin: 250px 30px;
         transform: scale(1.1);
      }
-     main {
+     /* main {
         display: flex;
     }
     
@@ -165,7 +193,7 @@ section {
     }
     section {
         overflow: hidden;
-    }
+    } */
     
 }
 
